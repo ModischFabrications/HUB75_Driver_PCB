@@ -1,0 +1,441 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Screw_Terminal_01x02 J_IN_1
+U 1 1 61B3A49D
+P 1700 1250
+F 0 "J_IN_1" H 1618 1467 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1618 1376 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1700 1250 50  0001 C CNN
+F 3 "~" H 1700 1250 50  0001 C CNN
+	1    1700 1250
+	-1   0    0    -1  
+$EndComp
+Text Notes 750  1300 0    50   ~ 0
+can be soldered wires
+$Comp
+L Device:Polyfuse F1
+U 1 1 61B3DBC0
+P 2250 1250
+F 0 "F1" V 2475 1250 50  0000 C CNN
+F 1 "5A" V 2384 1250 50  0000 C CNN
+F 2 "Fuse:Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2300 1050 50  0001 L CNN
+F 3 "~" H 2250 1250 50  0001 C CNN
+	1    2250 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 61B3E7C6
+P 2550 1250
+F 0 "#PWR0101" H 2550 1100 50  0001 C CNN
+F 1 "+5V" H 2565 1423 50  0000 C CNN
+F 2 "" H 2550 1250 50  0001 C CNN
+F 3 "" H 2550 1250 50  0001 C CNN
+	1    2550 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 61B3F549
+P 2550 1350
+F 0 "#PWR0102" H 2550 1100 50  0001 C CNN
+F 1 "GND" H 2555 1177 50  0000 C CNN
+F 2 "" H 2550 1350 50  0001 C CNN
+F 3 "" H 2550 1350 50  0001 C CNN
+	1    2550 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 61B3FB22
+P 2000 1250
+F 0 "#FLG0101" H 2000 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 2000 1423 50  0001 C CNN
+F 2 "" H 2000 1250 50  0001 C CNN
+F 3 "~" H 2000 1250 50  0001 C CNN
+	1    2000 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 61B401F6
+P 2000 1350
+F 0 "#FLG0102" H 2000 1425 50  0001 C CNN
+F 1 "PWR_FLAG" H 2000 1523 50  0001 C CNN
+F 2 "" H 2000 1350 50  0001 C CNN
+F 3 "~" H 2000 1350 50  0001 C CNN
+	1    2000 1350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1900 1250 2000 1250
+Connection ~ 2000 1250
+Wire Wire Line
+	2000 1250 2100 1250
+Wire Wire Line
+	1900 1350 2000 1350
+Connection ~ 2000 1350
+Wire Wire Line
+	2400 1250 2550 1250
+Connection ~ 2550 1250
+Wire Wire Line
+	2550 1250 2700 1250
+Wire Wire Line
+	2700 1350 2550 1350
+Connection ~ 2550 1350
+Wire Wire Line
+	2000 1350 2550 1350
+$Comp
+L power:+5V #PWR0103
+U 1 1 61B4B861
+P 2150 2250
+F 0 "#PWR0103" H 2150 2100 50  0001 C CNN
+F 1 "+5V" H 2165 2423 50  0000 C CNN
+F 2 "" H 2150 2250 50  0001 C CNN
+F 3 "" H 2150 2250 50  0001 C CNN
+	1    2150 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 61B4BC81
+P 2150 6100
+F 0 "#PWR0104" H 2150 5850 50  0001 C CNN
+F 1 "GND" H 2155 5927 50  0000 C CNN
+F 2 "" H 2150 6100 50  0001 C CNN
+F 3 "" H 2150 6100 50  0001 C CNN
+	1    2150 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 6100 2150 6100
+Connection ~ 2150 6100
+$Comp
+L Connector:Conn_01x01_Male TOUCH_1
+U 1 1 61B4F04A
+P 3050 3900
+F 0 "TOUCH_1" H 3022 3832 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 3022 3923 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal" H 3050 3900 50  0001 C CNN
+F 3 "~" H 3050 3900 50  0001 C CNN
+	1    3050 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male TOUCH_2
+U 1 1 61B4FBCA
+P 3050 3700
+F 0 "TOUCH_2" H 3022 3632 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 3022 3723 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal" H 3050 3700 50  0001 C CNN
+F 3 "~" H 3050 3700 50  0001 C CNN
+	1    3050 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male TOUCH_3
+U 1 1 61B4FFD2
+P 3050 4400
+F 0 "TOUCH_3" H 3022 4332 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 3022 4423 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal" H 3050 4400 50  0001 C CNN
+F 3 "~" H 3050 4400 50  0001 C CNN
+	1    3050 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 61B51039
+P 5200 1550
+F 0 "C1" H 5318 1596 50  0000 L CNN
+F 1 "1000uF" H 5318 1505 50  0000 L CNN
+F 2 "w_capacitors:CP_10x20mm_hor" H 5238 1400 50  0001 C CNN
+F 3 "~" H 5200 1550 50  0001 C CNN
+	1    5200 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0105
+U 1 1 61B52767
+P 5200 1400
+F 0 "#PWR0105" H 5200 1250 50  0001 C CNN
+F 1 "+5V" H 5215 1573 50  0000 C CNN
+F 2 "" H 5200 1400 50  0001 C CNN
+F 3 "" H 5200 1400 50  0001 C CNN
+	1    5200 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 61B52ECF
+P 5200 1700
+F 0 "#PWR0106" H 5200 1450 50  0001 C CNN
+F 1 "GND" H 5205 1527 50  0000 C CNN
+F 2 "" H 5200 1700 50  0001 C CNN
+F 3 "" H 5200 1700 50  0001 C CNN
+	1    5200 1700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1650 3800
+NoConn ~ 1650 3700
+$Comp
+L power:+3V3 #PWR0107
+U 1 1 61B54C0E
+P 2250 3000
+F 0 "#PWR0107" H 2250 2850 50  0001 C CNN
+F 1 "+3V3" H 2265 3173 50  0000 C CNN
+F 2 "" H 2250 3000 50  0001 C CNN
+F 3 "" H 2250 3000 50  0001 C CNN
+	1    2250 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2500 2150 2250
+Text Notes 950  2600 0    50   ~ 0
+pull while programming
+$Comp
+L Device:D D1
+U 1 1 61B5F384
+P 6100 1550
+F 0 "D1" V 6054 1630 50  0000 L CNN
+F 1 "POLARITY_PROTECTION" V 6145 1630 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6100 1550 50  0001 C CNN
+F 3 "~" H 6100 1550 50  0001 C CNN
+	1    6100 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0111
+U 1 1 61B60BA1
+P 6100 1400
+F 0 "#PWR0111" H 6100 1250 50  0001 C CNN
+F 1 "+5V" H 6115 1573 50  0000 C CNN
+F 2 "" H 6100 1400 50  0001 C CNN
+F 3 "" H 6100 1400 50  0001 C CNN
+	1    6100 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 61B60E9B
+P 6100 1700
+F 0 "#PWR0112" H 6100 1450 50  0001 C CNN
+F 1 "GND" H 6105 1527 50  0000 C CNN
+F 2 "" H 6100 1700 50  0001 C CNN
+F 3 "" H 6100 1700 50  0001 C CNN
+	1    6100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J_HUB75_1
+U 1 1 61B6F4F2
+P 5000 4650
+F 0 "J_HUB75_1" H 5050 5167 50  0000 C CNN
+F 1 "Conn_02x08_Row_Letter_First" H 5050 5076 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 5000 4650 50  0001 C CNN
+F 3 "~" H 5000 4650 50  0001 C CNN
+	1    5000 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x04 J_OUT_1
+U 1 1 61B80816
+P 2900 1250
+F 0 "J_OUT_1" H 2980 1242 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 2980 1151 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 2900 1250 50  0001 C CNN
+F 3 "~" H 2900 1250 50  0001 C CNN
+	1    2900 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1150 2700 1250
+Connection ~ 2700 1250
+Wire Wire Line
+	2700 1450 2700 1350
+Connection ~ 2700 1350
+Text Notes 7250 4150 0    50   ~ 0
+HUB75 Power is JST VHR-4N
+Text Label 4800 4350 0    50   ~ 0
+R1
+Text Label 4800 4450 0    50   ~ 0
+B1
+Text Label 4800 4550 0    50   ~ 0
+R2
+Text Label 4800 4650 0    50   ~ 0
+B2
+Text Label 4800 4750 0    50   ~ 0
+A
+Text Label 4800 4850 0    50   ~ 0
+C
+Text Label 4800 4950 0    50   ~ 0
+CLK
+Text Label 4800 5050 0    50   ~ 0
+OE
+Text Label 5300 4350 0    50   ~ 0
+G1
+Text Label 5300 4550 0    50   ~ 0
+G2
+Text Label 5300 4650 0    50   ~ 0
+E
+Text Label 5300 4750 0    50   ~ 0
+B
+Text Label 5300 4850 0    50   ~ 0
+D
+Text Label 5300 4950 0    50   ~ 0
+LAT
+$Comp
+L power:GND #PWR0113
+U 1 1 61B9905D
+P 5300 4450
+F 0 "#PWR0113" H 5300 4200 50  0001 C CNN
+F 1 "GND" V 5305 4322 50  0000 R CNN
+F 2 "" H 5300 4450 50  0001 C CNN
+F 3 "" H 5300 4450 50  0001 C CNN
+	1    5300 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 61B99D30
+P 5300 5050
+F 0 "#PWR0114" H 5300 4800 50  0001 C CNN
+F 1 "GND" V 5305 4922 50  0000 R CNN
+F 2 "" H 5300 5050 50  0001 C CNN
+F 3 "" H 5300 5050 50  0001 C CNN
+	1    5300 5050
+	0    -1   -1   0   
+$EndComp
+Text Label 2850 5500 0    50   ~ 0
+R1
+Text Label 2850 5600 0    50   ~ 0
+B1
+Text Label 2850 5200 0    50   ~ 0
+R2
+Text Label 2850 5300 0    50   ~ 0
+B2
+Text Label 2850 5400 0    50   ~ 0
+A
+Text Label 2850 4300 0    50   ~ 0
+C
+Text Label 2850 4100 0    50   ~ 0
+CLK
+Text Label 2850 4200 0    50   ~ 0
+OE
+Text Label 2850 5100 0    50   ~ 0
+G1
+Text Label 2850 5000 0    50   ~ 0
+G2
+Text Label 2850 4900 0    50   ~ 0
+E
+Text Label 2850 4800 0    50   ~ 0
+B
+Text Label 2850 4700 0    50   ~ 0
+D
+Text Label 2850 4000 0    50   ~ 0
+LAT
+Text Notes 5800 3200 0    50   ~ 0
+All pins support UART, I2C, PWM, SPI!
+$Comp
+L Connector:Conn_01x02_Male J_VCC_BREAKER_1
+U 1 1 61B5A4CB
+P 1950 2500
+F 0 "J_VCC_BREAKER_1" H 1800 2700 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1850 2600 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 1950 2500 50  0001 C CNN
+F 3 "~" H 1950 2500 50  0001 C CNN
+	1    1950 2500
+	1    0    0    -1  
+$EndComp
+Text Notes 4400 5450 0    50   ~ 0
+Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical
+Wire Wire Line
+	2250 3300 2250 3000
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO1
+U 1 1 61BDF86C
+P 950 7400
+F 0 "LOGO1" H 950 7675 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 950 7175 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen" H 950 7400 50  0001 C CNN
+F 3 "~" H 950 7400 50  0001 C CNN
+	1    950  7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L MF_custom:MF_Logo L1
+U 1 1 61BE4C9F
+P 1500 7450
+F 0 "L1" H 1500 7450 50  0001 C CNN
+F 1 "MF_Logo" H 1525 7450 50  0000 C CNN
+F 2 "MF custom:mf_logo_10mm" H 1500 7450 50  0001 C CNN
+F 3 "" H 1500 7450 50  0001 C CNN
+	1    1500 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2600 2150 2750
+$Comp
+L Device:C C2
+U 1 1 61BF4EDB
+P 1750 2900
+F 0 "C2" H 1865 2946 50  0000 L CNN
+F 1 "100nF" H 1865 2855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1788 2750 50  0001 C CNN
+F 3 "~" H 1750 2900 50  0001 C CNN
+	1    1750 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2750 2150 2750
+Connection ~ 2150 2750
+Wire Wire Line
+	2150 2750 2150 3300
+$Comp
+L power:GND #PWR0108
+U 1 1 61BF5C18
+P 1750 3050
+F 0 "#PWR0108" H 1750 2800 50  0001 C CNN
+F 1 "GND" H 1755 2877 50  0000 C CNN
+F 2 "" H 1750 3050 50  0001 C CNN
+F 3 "" H 1750 3050 50  0001 C CNN
+	1    1750 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESP32_DevKit_V1_DOIT:ESP32_DevKit_V1_DOIT U1
+U 1 1 61B47F16
+P 2250 4700
+F 0 "U1" H 2250 6281 50  0000 C CNN
+F 1 "ESP32_DevKit_V1_DOIT" H 2750 6050 50  0000 C CNN
+F 2 "ESP32_DevKit_V1_DOIT:esp32_devkit_v1_doit" H 1800 6050 50  0001 C CNN
+F 3 "https://aliexpress.com/item/32864722159.html" H 1800 6050 50  0001 C CNN
+	1    2250 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MF_custom:MF_Logo L2
+U 1 1 61C00AFE
+P 1950 7450
+F 0 "L2" H 1950 7450 50  0001 C CNN
+F 1 "MF_Logo" H 1975 7450 50  0000 C CNN
+F 2 "MF custom:mf_logo_10mm" H 1950 7450 50  0001 C CNN
+F 3 "" H 1950 7450 50  0001 C CNN
+	1    1950 7450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
