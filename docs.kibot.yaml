@@ -28,7 +28,7 @@ outputs:
       
 # https://github.com/nerdyscout/kicad-exports/blob/main/config/plot.black.kibot.yaml
   - name: 'https://github.com/yaqwsx/PcbDraw'
-    comment: 'default black svg top'
+    comment: 'default blue svg top'
     type: 'pcbdraw'
     dir: 'docs/img'
     options:
@@ -59,7 +59,7 @@ outputs:
       # The default is none
       show_components: none
       # [string|dict] PCB style (colors). An internal name, the name of a JSON file or the style options
-      style: '/usr/share/pcbdraw/styles/set-black-enig.json'
+      style: '/usr/share/pcbdraw/styles/set-blue-enig.json'
       # [string=''] Board variant to apply
       variant: ''
       # [boolean=false] render V-CUTS on the Cmts.User layer
@@ -68,7 +68,7 @@ outputs:
       warnings: 'none'
 
   - name: 'https://github.com/yaqwsx/PcbDraw'
-    comment: 'default black svg top'
+    comment: 'default blue svg top'
     type: 'pcbdraw'
     dir: 'docs/img'
     options:
@@ -99,7 +99,7 @@ outputs:
       # The default is none
       show_components: none
       # [string|dict] PCB style (colors). An internal name, the name of a JSON file or the style options
-      style: '/usr/share/pcbdraw/styles/set-black-enig.json'
+      style: '/usr/share/pcbdraw/styles/set-blue-enig.json'
       # [string=''] Board variant to apply
       variant: ''
       # [boolean=false] render V-CUTS on the Cmts.User layer
