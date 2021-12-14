@@ -10,7 +10,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    - uses: nerdyscout/kicad-exports@v2.3.1
+    - name: render KiCad exports
+      uses: nerdyscout/kicad-exports@v2.3.1
       with:
       # Required - kibot config file
         config: docs.kibot.yaml

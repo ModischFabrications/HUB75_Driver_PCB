@@ -86,7 +86,7 @@ outputs:
       # [list(string)=[]] list of libraries
       libs: []
       # [boolean=false] mirror the board
-      mirror: true
+      mirror: false
       # [boolean=false] do not make holes transparent
       no_drillholes: false
       # [string='%f-%i%v.%x'] name for the generated file. Affected by global options
