@@ -24,6 +24,8 @@ Feel free to add external solutions though, should be easy to cram a 18650 USP b
 
 Size and exact positioning is determined by the backing struts of my panel. 
 
+Using a 30 Pin Devboard keeps everything compact, but means that IO options are limited. Many pins of the ESP32 have limited usability or are otherwise reserved, check [pinouts](https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2018/08/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIOs-Copy.png) for reference. This board contains 2 (/3) Touch Inputs for future expansion, a full I2C/SPI/... wasn't included due to size constraints. 
+
 ### Electrical
 
 Short-circuit-resistance of the power leads is archieved using a polyfuse. Resistance of the inputs is build-in, as they are high impedance, but the outputs are at risk. 
