@@ -1,3 +1,5 @@
+[![KiCad Exports](https://github.com/ModischFabrications/HUB75_Driver_PCB/actions/workflows/exports.yml/badge.svg)](https://github.com/ModischFabrications/HUB75_Driver_PCB/actions/workflows/exports.yml)
+
 # HUB75_Driver_PCB
 
 This is the PCB for my custom HUB75 RGB Panel Display.
@@ -5,6 +7,10 @@ This is the PCB for my custom HUB75 RGB Panel Display.
 Open like regular in KiCad. Look into the docs zip under [Actions/KiCad Exports](https://github.com/ModischFabrications/HUB75_Driver_PCB/actions/workflows/exports.yml) to see renderings. 
 
 This schematic can be soldered manually onto a perfboard, but feel free to order a PCB instead. 
+
+Use a **5V** power supply with 10W or more! 
+Never connect USB Power and Matrix power together, make sure to remove the jumper when using the USB connector. 
+Powering the Matrix via USB, without the terminals, is possible, but definitely not recommended, the devboard can't handle it. 
 
 ## Decisions
 
